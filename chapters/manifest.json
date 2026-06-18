@@ -1,0 +1,31 @@
+{
+  "chapters": [
+    {
+      "id": "ch01",
+      "number": 1,
+      "title": "Eyes Only (Только для глаз)",
+      "era": "1944 · Париж",
+      "status": "published",
+      "publish_date": "2026-06-19",
+      "file": "chapters/ch01.md"
+    },
+    {
+      "id": "ch02",
+      "number": 2,
+      "title": "Coup de Soleil (Солнечный удар)",
+      "era": "1940 · Ницца",
+      "status": "published",
+      "publish_date": "2026-06-19",
+      "file": "chapters/ch02.md"
+    },
+    {
+      "id": "ch03",
+      "number": 3,
+      "title": "Beobachtung (Наблюдение)",
+      "era": "1944 · Бретань",
+      "status": "soon",
+      "publish_date": "2026-06-26",
+      "file": "chapters/ch03.md"
+    }
+  ]
+}
