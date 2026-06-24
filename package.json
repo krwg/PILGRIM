@@ -1,0 +1,8 @@
+{
+  "name": "pilgrim-site",
+  "private": true,
+  "scripts": {
+    "convert": "node tools/convert-chapter.mjs",
+    "serve": "node tools/serve.mjs"
+  }
+}

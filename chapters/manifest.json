@@ -3,11 +3,13 @@
     {
       "id": "ch01",
       "number": 1,
-      "title": "Eyes Only (Только для глаз)",
+      "title": "EYES ONLY (Только для глаз)",
       "era": "1944 · Париж",
       "status": "published",
-      "publish_date": "2026-06-19",
-      "file": "chapters/ch01.md"
+      "publish_date": "2026-06-24",
+      "date_badge": "stamp",
+      "when": "Октябрь 1944 г., Париж",
+      "file": "chapters/ch01.txt"
     },
     {
       "id": "ch02",
@@ -15,8 +17,10 @@
       "title": "Coup de Soleil (Солнечный удар)",
       "era": "1940 · Ницца",
       "status": "published",
-      "publish_date": "2026-06-19",
-      "file": "chapters/ch02.md"
+      "publish_date": "2026-06-24",
+      "date_badge": "sun",
+      "when": "14–16 июня 1940, Ницца",
+      "file": "chapters/ch02.txt"
     },
     {
       "id": "ch03",
@@ -24,8 +28,15 @@
       "title": "Beobachtung (Наблюдение)",
       "era": "1944 · Бретань",
       "status": "soon",
-      "publish_date": "2026-06-26",
-      "file": "chapters/ch03.md"
+      "file": "chapters/ch03.txt"
+    },
+    {
+      "id": "ch04",
+      "number": 4,
+      "title": "BUREAU DE PRESSE (Бюро печати)",
+      "era": "1940 · Ницца",
+      "status": "soon",
+      "file": "chapters/ch04.txt"
     }
   ]
 }

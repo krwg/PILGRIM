@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#e8e4dc"/>
+  <rect x="64" y="64" width="384" height="384" rx="16" fill="#f4f1ea" stroke="#c4b9a8" stroke-width="3"/>
+  <text x="256" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="140" font-weight="600" fill="#1c1a17">П</text>
+  <rect x="140" y="290" width="232" height="56" fill="none" stroke="#8b1e1e" stroke-width="4" transform="rotate(-3 256 318)"/>
+  <text x="256" y="330" text-anchor="middle" font-family="system-ui" font-size="22" fill="#8b1e1e" letter-spacing="5">EYES ONLY</text>
+</svg>

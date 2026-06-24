@@ -1,0 +1,24 @@
+{
+  "name": "Пилигрим",
+  "short_name": "Пилигрим",
+  "description": "Роман о шпионаже УСС. Ницца 1940, Бретань 1944.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#e8e4dc",
+  "theme_color": "#8b1e1e",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "assets/img/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
