@@ -152,14 +152,14 @@ const APP = (() => {
     const { term, body } = parseTooltipDef(def);
     const long = body.length > 380;
     const tip = document.createElement('div');
-    if (mobile && long) {
+    if (mobile) {
       tip.className = 'tooltip tooltip-sheet';
     } else if (long) {
       tip.className = 'tooltip tooltip-panel';
     } else {
       tip.className = 'tooltip tooltip-float';
     }
-    const handle = mobile && long ? '<div class="sheet-handle" aria-hidden="true"></div>' : '';
+    const handle = mobile ? '<div class="sheet-handle" aria-hidden="true"></div>' : '';
     const termHtml = term ? `<span class="t-term">${escapeHTML(term)}</span>` : '';
     tip.innerHTML = `${handle}${termHtml}<div class="t-body">${renderTooltipBody(body)}</div>`;
     return { tip, mobile, long };
@@ -571,7 +571,7 @@ const APP = (() => {
         tip.dataset.owner = id;
         document.body.appendChild(tip);
         const panel = long && !mobile;
-        const sheet = long && mobile;
+        const sheet = mobile;
         document.body.classList.add(sheet ? 'tooltip-open' : panel ? 'tooltip-panel-open' : 'tooltip-open-light');
 
         if (sheet) {

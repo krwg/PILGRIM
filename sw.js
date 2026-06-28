@@ -1,4 +1,4 @@
-const CACHE = 'pilgrim-v24';
+const CACHE = 'pilgrim-v25';
 
 function basePath() {
   const p = self.location.pathname;

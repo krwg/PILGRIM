@@ -1340,14 +1340,29 @@ body.theme-night .exhibit-translate-btn {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 12px 20px calc(20px + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  max-height: min(52vh, 380px);
+  padding: 10px 16px 14px;
+  padding-bottom: calc(14px + env(safe-area-inset-bottom));
   background: var(--surface);
   border-radius: var(--radius) var(--radius) 0 0;
   border: 1px solid var(--border);
   border-bottom: none;
   box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.15);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   transform: translateY(100%);
+  z-index: 200;
+}
+
+.tooltip-sheet .t-body {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  flex: 1;
+  min-height: 0;
+  font-size: 0.84rem;
+  line-height: 1.45;
 }
 
 .tooltip-sheet.tooltip-visible {
@@ -1359,7 +1374,8 @@ body.theme-night .exhibit-translate-btn {
   height: 4px;
   background: var(--border);
   border-radius: 2px;
-  margin: 0 auto 14px;
+  margin: 0 auto 10px;
+  flex-shrink: 0;
 }
 
 .tooltip .t-term {
@@ -1372,7 +1388,9 @@ body.theme-night .exhibit-translate-btn {
 }
 
 .tooltip-sheet .t-term {
-  font-size: 1.35rem;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-bottom: 6px;
 }
 
 .tooltip .t-body {
@@ -1451,11 +1469,27 @@ body.tooltip-panel-open::after {
   }
 
   .tooltip-sheet {
-    bottom: calc(52px + env(safe-area-inset-bottom, 0px));
-    border-radius: var(--radius);
-    margin: 0 10px;
-    left: 0;
-    right: 0;
+    left: 8px;
+    right: 8px;
+    bottom: calc(56px + env(safe-area-inset-bottom, 0px));
+    max-height: min(42dvh, 320px);
+    border-radius: 12px;
+    border-bottom: 1px solid var(--border);
+    padding: 8px 14px 12px;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .tooltip-sheet .t-term {
+    font-size: 1rem;
+  }
+
+  .tooltip-sheet .t-body {
+    font-size: 0.8rem;
+    line-height: 1.42;
+  }
+
+  .tooltip-sheet .t-body p {
+    margin-bottom: 0.6em;
   }
 
   .chapter-nav {
