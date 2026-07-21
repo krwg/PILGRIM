@@ -17,6 +17,7 @@ concurrency:
 
 jobs:
   # Resolves @krwg/palimpsest from the public npm registry (download counter).
+  # Smoke: each PR/push runs npm ci against the lockfile.
   install:
     runs-on: ubuntu-latest
     steps:
