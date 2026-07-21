@@ -4,5 +4,8 @@
   "scripts": {
     "convert": "node tools/convert-chapter.mjs",
     "serve": "node tools/serve.mjs"
+  },
+  "dependencies": {
+    "@krwg/palimpsest": "0.1.0"
   }
 }

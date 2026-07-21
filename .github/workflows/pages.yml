@@ -3,6 +3,7 @@ name: Deploy static site
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -11,11 +12,24 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
+  # Resolves @krwg/palimpsest from the public npm registry (download counter).
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
   deploy:
+    if: github.event_name != 'pull_request'
+    needs: install
     runs-on: ubuntu-latest
     environment:
       name: github-pages
