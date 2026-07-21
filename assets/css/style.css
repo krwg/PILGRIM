@@ -91,6 +91,16 @@ body.landing {
     );
 }
 
+body.landing .reader-bar,
+body.landing .ps-reader-bar,
+body.landing .reader-reveal-zone,
+body:not(.in-reader) .reader-bar,
+body:not(.in-reader) .ps-reader-bar,
+body:not(.in-reader) .reader-reveal-zone,
+body:not(.in-reader) .read-progress-track {
+  display: none !important;
+}
+
 body.landing.theme-night {
   background-image:
     radial-gradient(ellipse 100% 65% at 50% -8%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 52%),
@@ -1075,7 +1085,8 @@ body.theme-night .exhibit-translate-btn {
   flex-shrink: 0;
 }
 
-#reader-more {
+#reader-more,
+#ps-reader-more {
   font-size: 1.1rem;
   letter-spacing: 0.05em;
   line-height: 1;

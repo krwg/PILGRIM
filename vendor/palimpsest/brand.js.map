@@ -1,0 +1,1 @@
+{"version":3,"file":"brand.js","sourceRoot":"","sources":["../src/brand.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,WAAW,GAAG,YAAY,CAAC;AACxC,MAAM,CAAC,MAAM,iBAAiB,GAAG,OAAO,CAAC;AAEzC,MAAM,CAAC,MAAM,KAAK,GAAG;IACnB,IAAI,EAAE,WAAW;IACjB,SAAS,EAAE,iBAAiB;IAC5B,WAAW,EAAE,kBAAkB;CACvB,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"registerServiceWorker.d.ts","sourceRoot":"","sources":["../../src/sw/registerServiceWorker.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,4BAA4B;IAC3C,uFAAuF;IACvF,UAAU,CAAC,EAAE,OAAO,CAAC;CACtB;AAED;;;GAGG;AACH,wBAAgB,qBAAqB,CACnC,GAAG,EAAE,MAAM,EACX,OAAO,GAAE,4BAAiC,GACzC,IAAI,CA6BN"}
